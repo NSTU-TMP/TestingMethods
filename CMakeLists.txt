@@ -19,4 +19,10 @@ include_directories(shadow_calculator)
 add_subdirectory(shadow_calculator_tests)
 include_directories(shadow_calculator_tests)
 
+add_subdirectory(polish_notation)
+include_directories(polish_notation)
+
+add_subdirectory(polish_notation_tests)
+include_directories(polish_notation_tests)
+
 add_subdirectory(src)

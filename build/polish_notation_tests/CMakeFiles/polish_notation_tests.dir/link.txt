@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpolish_notation_tests.a CMakeFiles/polish_notation_tests.dir/polish_notation_tests.c.o
-/usr/bin/ranlib libpolish_notation_tests.a

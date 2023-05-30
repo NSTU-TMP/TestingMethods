@@ -7,7 +7,6 @@ add_library(shadow_calculator_tests STATIC
     shadow_calculator_tests.c
     shadow_calculator_tests.h
     tests.c
-    # test_2.cpp 
 )
 
 
