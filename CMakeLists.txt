@@ -13,6 +13,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(lib)
-include_directories(lib)
+add_subdirectory(shadow_calculator)
+include_directories(shadow_calculator)
+
+add_subdirectory(shadow_calculator_tests)
+include_directories(shadow_calculator_tests)
+
 add_subdirectory(src)
