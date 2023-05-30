@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshadow_calculator_tests.a CMakeFiles/shadow_calculator_tests.dir/shadow_calculator_tests.c.o CMakeFiles/shadow_calculator_tests.dir/tests.c.o
+/usr/bin/ranlib libshadow_calculator_tests.a

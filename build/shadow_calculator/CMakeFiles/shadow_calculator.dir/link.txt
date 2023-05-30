@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshadow_calculator.a CMakeFiles/shadow_calculator.dir/calc_shadow_length.c.o
+/usr/bin/ranlib libshadow_calculator.a

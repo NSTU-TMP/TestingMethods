@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpolish_notation.a CMakeFiles/polish_notation.dir/stack.c.o CMakeFiles/polish_notation.dir/polish_notation.c.o CMakeFiles/polish_notation.dir/parsing.c.o
+/usr/bin/ranlib libpolish_notation.a
