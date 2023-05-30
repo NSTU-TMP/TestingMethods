@@ -43,12 +43,3 @@ void polish_notation_assert_test_result(FILE* output_stream, int test_num,
     print_stack(output_stream, test_stack);
   }
 }
-
-polish_notation_run_test_1(output_stream);
-polish_notation_run_test_2(output_stream);
-polish_notation_run_test_3(output_stream);
-polish_notation_run_test_4(output_stream);
-polish_notation_run_test_5(output_stream);
-polish_notation_run_test_6(output_stream);
-polish_notation_run_test_7(output_stream);
-polish_notation_run_test_8(output_stream);

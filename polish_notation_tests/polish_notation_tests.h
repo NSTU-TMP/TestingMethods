@@ -14,8 +14,8 @@ void polish_notation_assert_test_result(FILE* output_stream, int test_num,
                                         struct stack* real_stack,
                                         struct stack* test_stack);
 
-polish_notation_run_test_1(output_stream);
-polish_notation_run_test_2(output_stream);
-polish_notation_run_test_3(output_stream);
+void polish_notation_run_test_1(FILE* output_stream);
+void polish_notation_run_test_2(FILE* output_stream);
+void polish_notation_run_test_3(FILE* output_stream);
 
 #endif  // SHADOW_CALCULATOR_SEGMENT_TESTS_H_

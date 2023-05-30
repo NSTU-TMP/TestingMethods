@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/shadow_calculator",
+  "command": "/usr/bin/cc    -o CMakeFiles/shadow_calculator.dir/calc_shadow_length.c.o -c /home/xpomin/Prog/TestingMethods/shadow_calculator/calc_shadow_length.c",
+  "file": "/home/xpomin/Prog/TestingMethods/shadow_calculator/calc_shadow_length.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/shadow_calculator_tests",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests/../shadow_calculator  -o CMakeFiles/shadow_calculator_tests.dir/shadow_calculator_tests.c.o -c /home/xpomin/Prog/TestingMethods/shadow_calculator_tests/shadow_calculator_tests.c",
+  "file": "/home/xpomin/Prog/TestingMethods/shadow_calculator_tests/shadow_calculator_tests.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/shadow_calculator_tests",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests/../shadow_calculator  -o CMakeFiles/shadow_calculator_tests.dir/tests.c.o -c /home/xpomin/Prog/TestingMethods/shadow_calculator_tests/tests.c",
+  "file": "/home/xpomin/Prog/TestingMethods/shadow_calculator_tests/tests.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/polish_notation",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests  -o CMakeFiles/polish_notation.dir/stack.c.o -c /home/xpomin/Prog/TestingMethods/polish_notation/stack.c",
+  "file": "/home/xpomin/Prog/TestingMethods/polish_notation/stack.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/polish_notation",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests  -o CMakeFiles/polish_notation.dir/polish_notation.c.o -c /home/xpomin/Prog/TestingMethods/polish_notation/polish_notation.c",
+  "file": "/home/xpomin/Prog/TestingMethods/polish_notation/polish_notation.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/polish_notation",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests  -o CMakeFiles/polish_notation.dir/parsing.c.o -c /home/xpomin/Prog/TestingMethods/polish_notation/parsing.c",
+  "file": "/home/xpomin/Prog/TestingMethods/polish_notation/parsing.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/polish_notation_tests",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests -I/home/xpomin/Prog/TestingMethods/polish_notation -I/home/xpomin/Prog/TestingMethods/polish_notation_tests/../polish_notation  -o CMakeFiles/polish_notation_tests.dir/polish_notation_tests.c.o -c /home/xpomin/Prog/TestingMethods/polish_notation_tests/polish_notation_tests.c",
+  "file": "/home/xpomin/Prog/TestingMethods/polish_notation_tests/polish_notation_tests.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/polish_notation_tests",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests -I/home/xpomin/Prog/TestingMethods/polish_notation -I/home/xpomin/Prog/TestingMethods/polish_notation_tests/../polish_notation  -o CMakeFiles/polish_notation_tests.dir/tests.c.o -c /home/xpomin/Prog/TestingMethods/polish_notation_tests/tests.c",
+  "file": "/home/xpomin/Prog/TestingMethods/polish_notation_tests/tests.c"
+},
+{
+  "directory": "/home/xpomin/Prog/TestingMethods/build/src",
+  "command": "/usr/bin/cc  -I/home/xpomin/Prog/TestingMethods/shadow_calculator -I/home/xpomin/Prog/TestingMethods/shadow_calculator_tests -I/home/xpomin/Prog/TestingMethods/polish_notation -I/home/xpomin/Prog/TestingMethods/polish_notation_tests -I/home/xpomin/Prog/TestingMethods/src/../shadow_calculator_tests -I/home/xpomin/Prog/TestingMethods/src/../polish_notation_tests  -o CMakeFiles/Executable.out.dir/main.c.o -c /home/xpomin/Prog/TestingMethods/src/main.c",
+  "file": "/home/xpomin/Prog/TestingMethods/src/main.c"
+}
+]
