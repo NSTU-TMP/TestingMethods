@@ -1,0 +1,17 @@
+#include <check.h>
+#include <math.h>
+
+#include "polish_notation.h"
+#include "stack.h"
+
+#test standart_parse_2
+
+char test_expr[] = "";
+
+struct stack *test_stack = parse_input_in_polish_notation(test_expr);
+struct stack *expected_stack = NULL;
+
+ck_assert(is_stack_equal(test_stack, expected_stack));
+
+destroy(test_stack);
+destroy(expected_stack);

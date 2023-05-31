@@ -33,13 +33,6 @@ int priority_compare(char op1, char op2) {
   return check_priority(op1) > check_priority(op2);
 }
 
-int check_dimension(char operation) {
-  int size = 2;
-  if (is_math_symbol(operation)) size = 2;
-  if (is_func(operation) || operation == '~') size = 1;
-  return size;
-}
-
 int is_func(char c) {
   int res = 0;
   //       sin         cos         tg          ctg         sqrt        ln
@@ -57,8 +50,7 @@ int is_math_symbol(char c) {
 
 int is_num(char c) {
   int res = 0;
-  if ((c >= '0' && c <= '9') || c == '.' || c == ',' || c == UNNOKNW_WARRIABLE)
-    res = 1;
+  if ((c >= '0' && c <= '9') || c == '.' || c == ',' || c == 'x') res = 1;
   return res;
 }
 
@@ -66,28 +58,11 @@ char *str_transformation(char *input) {
   char *funcs[] = {"sin", "cos", "ctg", "tg", "sqrt", "ln"};
   char *minifuncs = "scgtql";
   squeeze(input, ' ');
+
   for (int i = 0; i < 6; i++) {
     change_expr(input, funcs[i], minifuncs[i]);
   }
   return input;
-}
-
-int valid_input(char *input) {
-  int res = 1;
-  int countBrackets = 0;
-  while (*input != '\0') {
-    if (!is_math_symbol(*input) && !is_num(*input) && !is_func(*input) &&
-        *input != ')')
-      res = 0;
-    if (*input == ',') *input = '.';
-    if (*input == '(') countBrackets++;
-    if (*input == ')') countBrackets--;
-    if (countBrackets < 0) res = 0;
-    if (is_func(*input) && *(input + 1) != '(') res = 0;
-    input++;
-  }
-  if (countBrackets != 0) res = 0;
-  return res;
 }
 
 void change_expr(char *exp, char *func, char sym) {

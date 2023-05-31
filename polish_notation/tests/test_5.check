@@ -1,0 +1,15 @@
+#include <check.h>
+#include <math.h>
+
+#include "polish_notation.h"
+#include "stack.h"
+
+#test standart_parse_5
+
+char test_expr[] = "1+2+3 + sin(2)\0";
+
+struct stack *test_stack = parse_input_in_polish_notation(test_expr);
+
+ck_assert(stack_size(test_stack) == 8);
+
+destroy(test_stack);

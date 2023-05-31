@@ -1,0 +1,28 @@
+#include <check.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include "segment.h"
+
+#test standart_parse_2
+
+int count = 4;
+segment* segments = (segment*)malloc(sizeof(segment) * count);
+
+segments[0].left_bound = 1;
+segments[0].right_bound = 10;
+
+segments[1].left_bound = 2;
+segments[1].right_bound = 5;
+
+segments[2].left_bound = 3;
+segments[2].right_bound = 6;
+
+segments[3].left_bound = 7;
+segments[3].right_bound = 8;
+
+float test_res = calc_shadow_length(segments, count);
+
+ck_assert_double_eq(9, test_res);
+
+free(segments);

@@ -1,0 +1,16 @@
+#include <check.h>
+#include <math.h>
+#include <stdlib.h>
+
+#include "segment.h"
+
+#test standart_parse_3
+
+int count = 4;
+segment* segments = NULL;
+
+float test_res = calc_shadow_length(segments, count);
+
+ck_assert_double_eq(-1, test_res);
+
+free(segments);

@@ -42,16 +42,6 @@ struct stack *pop(struct stack *h) {
   return h;
 }
 
-int size(struct stack *s) {
-  int size = 0;
-  struct stack *runner = s;
-  while (runner != NULL) {
-    ++size;
-    runner = runner->next;
-  }
-  return size;
-}
-
 void destroy(struct stack *h) {
   struct stack *destroyer = h;
 
@@ -75,4 +65,30 @@ struct stack *reverse(struct stack *s) {
     runner = runner->next;
   }
   return res;
+}
+
+int stack_size(struct stack *s) {
+  int size = 0;
+  struct stack *runner = s;
+  while (runner != NULL) {
+    ++size;
+    runner = runner->next;
+  }
+  return size;
+}
+
+int is_stack_equal(struct stack *stc_1, struct stack *stc_2) {
+  struct stack *runner_1 = stc_1;
+  struct stack *runner_2 = stc_2;
+  while (runner_1 != NULL && runner_2 != NULL) {
+    if (runner_1->data != runner_2->data || runner_1->num != runner_2->num) {
+      return 0;
+    }
+    runner_1 = runner_1->next;
+    runner_2 = runner_2->next;
+  }
+  if (runner_1 != runner_2) {
+    return 0;
+  }
+  return 1;
 }

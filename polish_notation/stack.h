@@ -14,6 +14,7 @@ struct stack *pop(struct stack *h);
 void destroy(struct stack *h);
 char pick(struct stack *h);
 struct stack *reverse(struct stack *s);
-int size(struct stack *s);
+int stack_size(struct stack *s);
+int is_stack_equal(struct stack *stc_1, struct stack *stc_2);
 
 #endif  // SRC_STACK_H_
